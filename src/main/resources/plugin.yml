@@ -1,0 +1,8 @@
+name: FeatherFeed
+version: '${project.version}'
+main: net.orenji64.featherfeed.FeatherFeed
+api-version: 1.17
+authors: [ Orenji64 ]
+description: A simple, lightweight join message plugin for your spigot server.
+website: orenji64.net
+depend: [PlaceholderAPI]

@@ -1,0 +1,63 @@
+##########################    Plugin Info & Config Usage    ##########################
+#
+#  GitHub:
+#
+#
+#  All messages support PlaceholderAPI  and MineDown formatting. To learn how to use
+#  MineDown visit https://wiki.phoenix616.dev/library:minedown:syntax. This config
+#  file is very straightforward. The first section allows you to manage all features
+#  of the plugin. The second (and most important) section allows you to change the
+#  messages for joining and leaving the server including the custom welcome message
+#  sent to players privately.
+#
+######################################################################################
+
+# ENABLE/DISABLE FEATURES:
+# Send one of the specified messages upon a player joining
+enable-join-message: true
+# Send one of the specified messages upon a player leaving
+enable-leave-message: true
+# Send the specified message whenever a player joins
+enable-welcome-message: true
+# Send the specified message whenever a player joins for the first time
+enable-first-join-message: false
+# Will the welcome message be sent as well upon first join?
+# If set to true, both welcome messages will appear on first join.
+enable-welcome-on-first-join: true
+
+# CHANGE MESSAGES:
+messages:
+  # One message will be randomly selected each time a player joins
+  # Will be displayed in the format: [Player name] [Message]
+  join:
+    - "joined the game"
+    - "has joined us"
+    - "is here!"
+    - "joins the battle!"
+    - "found the server"
+  # One message will be randomly selected each time a player leaves
+  # Will be displayed in the format: [Player name] [Message]
+  leave:
+    - "left the game"
+    - "has left us"
+    - "is no longer with us"
+    - "left the battle"
+    - "was lost from the server"
+  # A multiline message. You can change the number of lines
+  # This will display every time a player joins the server if enabled
+  welcome: |-
+    **Welcome to the server!**
+
+    This welcome message supports:
+    ➤ Custom &6Colors
+    ➤ &#f54272-#f57242&Gradient text
+    ➤ [__##Links##__](https://orenji64.net)
+    ➤ PlaceholderAPI
+    ➤ And much more! (See config)
+  # This is the exact same as above, but will only display the first ever time a player joins
+  first-join: |-
+    **Welcome to the server!**
+
+    This is your first time here!
+    Try running /help or visit the
+    Discord server for support.
