@@ -1,5 +1,9 @@
 package net.orenji64.featherfeed;
 
+import net.orenji64.featherfeed.commands.About;
+import net.orenji64.featherfeed.commands.Reload;
+import net.orenji64.featherfeed.config.ConfFile;
+import net.orenji64.featherfeed.config.ConfVals;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -12,13 +16,15 @@ public final class FeatherFeed extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        System.out.println("§6[LJP] Plugin loaded");
+        System.out.println("§6[FF] Plugin loaded");
         getServer().getPluginManager().registerEvents(this,this);
-        loadConfig();
-    }
-    public void loadConfig() {
-        config.options().copyDefaults(true);
-        saveConfig();
+
+        ConfFile.setup();
+        ConfVals.setup();
+        ConfFile.get().options().copyDefaults(true);
+        ConfFile.save();
+        this.getCommand("featherfeed").setExecutor(new About());
+        this.getCommand("featherfeedreload").setExecutor(new Reload());
     }
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e) {

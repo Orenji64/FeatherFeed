@@ -6,3 +6,19 @@ authors: [ Orenji64 ]
 description: A simple, lightweight join message plugin for your spigot server.
 website: orenji64.net
 depend: [PlaceholderAPI]
+
+commands:
+  featherfeed:
+    description: Display info about the plugin FeatherFeed
+    usage: /ff
+    aliases: ff
+    permission: featherfeed
+  featherfeedreload:
+    description: Reloads FeatherFeed's config file
+    usage: /ffreload
+    aliases: ffrl
+    permission: featherfeed
+permissions:
+  featherfeed:
+    description: Allows use of the plugin's command
+    default: op

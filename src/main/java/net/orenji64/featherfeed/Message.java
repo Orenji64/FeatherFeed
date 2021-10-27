@@ -29,12 +29,12 @@ public class Message {
     public static void WelcomeMessage(PlayerJoinEvent e, FileConfiguration c) {
         Player p = e.getPlayer();
         if (!p.hasPlayedBefore() && !c.getBoolean("enable-welcome-on-first-join")) {
-            System.out.println(p.getDisplayName()+" not welcomed due to config");
+            System.out.println("FF"+p.getDisplayName()+" not welcomed due to config");
         }
         else {
             String message = c.getString("messages.welcome");
             p.spigot().sendMessage(new MineDown(
-                    PlaceholderAPI.setPlaceholders(p,message)
+                    PlaceholderAPI.setPlaceholders(p,message+"\n")
             ).toComponent());
         }
 
@@ -44,7 +44,7 @@ public class Message {
         Player p = e.getPlayer();
         String message = c.getString("messages.first-join");
         p.spigot().sendMessage(new MineDown(
-                PlaceholderAPI.setPlaceholders(p,message)
+                PlaceholderAPI.setPlaceholders(p,message+"\n")
         ).toComponent());
     }
 }

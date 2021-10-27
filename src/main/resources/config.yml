@@ -49,10 +49,10 @@ messages:
     **Welcome to the server!**
 
     This welcome message supports:
-    ➤ Custom &6Colors
-    ➤ &#f54272-#f57242&Gradient text
-    ➤ [__##Links##__](https://orenji64.net)
-    ➤ PlaceholderAPI
+    ➤ Custom &6Colors&r
+    ➤ &#f54272-#f57242&Gradient text&r
+    ➤ &b[__##Links##__](https://orenji64.net)&r
+    ➤ Placeholders
     ➤ And much more! (See config)
   # This is the exact same as above, but will only display the first ever time a player joins
   first-join: |-
