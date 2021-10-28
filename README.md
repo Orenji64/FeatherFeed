@@ -1,2 +1,2 @@
 # FeatherFeed
- My lightweight and heavily customisable Spigot plugin.
+ My lightweight and heavily customisable Spigot player feed plugin.
