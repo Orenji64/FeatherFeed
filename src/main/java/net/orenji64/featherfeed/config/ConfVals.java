@@ -6,11 +6,11 @@ import java.io.File;
 
 public class ConfVals {
 
-    public static void setup() {
+    public static void set() {/*
         FileConfiguration c = ConfFile.get();
 
         c.addDefault("enable-join-message",true);
-        c.addDefault("enable-leave-message",true);
+        c.addDefault("enable-leave-message",true);*/
     }
 
 }

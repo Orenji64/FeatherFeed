@@ -2,12 +2,14 @@ package net.orenji64.featherfeed.commands;
 
 import de.themoep.minedown.MineDown;
 import net.md_5.bungee.api.chat.BaseComponent;
+import net.orenji64.featherfeed.FeatherFeed;
 import net.orenji64.featherfeed.config.ConfFile;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 

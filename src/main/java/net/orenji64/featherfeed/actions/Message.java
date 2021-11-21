@@ -1,4 +1,4 @@
-package net.orenji64.featherfeed;
+package net.orenji64.featherfeed.actions;
 
 import de.themoep.minedown.MineDown;
 import me.clip.placeholderapi.PlaceholderAPI;

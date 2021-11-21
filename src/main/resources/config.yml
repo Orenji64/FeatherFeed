@@ -1,16 +1,16 @@
-##########################    Plugin Info & Config Usage    ##########################
-#
-#  GitHub:
-#
-#
-#  All messages support PlaceholderAPI  and MineDown formatting. To learn how to use
-#  MineDown visit https://wiki.phoenix616.dev/library:minedown:syntax. This config
-#  file is very straightforward. The first section allows you to manage all features
-#  of the plugin. The second (and most important) section allows you to change the
-#  messages for joining and leaving the server including the custom welcome message
-#  sent to players privately.
-#
-######################################################################################
+############################    Plugin Info & Config Usage    ############################
+##                                                                                      ##
+##  GitHub: https://github.com/Orenji64/FeatherFeed                                     ##
+##  Spigot:                                                                             ##
+##                                                                                      ##
+##  All messages support PlaceholderAPI  and MineDown formatting. To learn how to use   ##
+##  MineDown visit https://wiki.phoenix616.dev/library:minedown:syntax. This config     ##
+##  file is very straightforward. The first section allows you to manage all features   ##
+##  of the plugin. The second (and most important) section allows you to change the     ##
+##  messages for joining and leaving the server including the custom welcome message    ##
+##  sent to players privately.                                                          ##
+##                                                                                      ##
+##########################################################################################
 
 # ENABLE/DISABLE FEATURES:
 # Send one of the specified messages upon a player joining
